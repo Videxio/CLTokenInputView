@@ -137,14 +137,14 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
 
 - (void)removeToken:(CLToken *)token
 {
-    NSInteger index = [self.tokens indexOfObject:token];
+    NSUInteger index = [self.tokens indexOfObject:token];
     if (index == NSNotFound) {
         return;
     }
     [self removeTokenAtIndex:index];
 }
 
-- (void)removeTokenAtIndex:(NSInteger)index
+- (void)removeTokenAtIndex:(NSUInteger)index
 {
     if (index == NSNotFound) {
         return;
@@ -433,7 +433,7 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
         self.textField.text = replacementText;
     }
     // Then remove the view from our data
-    NSInteger index = [self.tokenViews indexOfObject:tokenView];
+    NSUInteger index = [self.tokenViews indexOfObject:tokenView];
     if (index == NSNotFound) {
         return;
     }
