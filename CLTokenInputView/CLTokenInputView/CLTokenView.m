@@ -211,7 +211,7 @@ static NSString *const UNSELECTED_LABEL_NO_COMMA_FORMAT = @"%@";
 
     CGRect labelFrame = CGRectInset(bounds, PADDING_X, PADDING_Y);
     self.selectedLabel.frame = labelFrame;
-    labelFrame.size.width += PADDING_X*2.0;
+    labelFrame.size.width += PADDING_X * 2.0f;
     self.label.frame = labelFrame;
 }
 
